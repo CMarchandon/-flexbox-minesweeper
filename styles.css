@@ -1,0 +1,11 @@
+.caseOne {
+    width: 10%;
+    height: 10%;
+    background-color: #585858;
+    border: 1px dotted;
+    display: flex;
+}
+
+.empty {
+    background-color: #cbcbcb;
+}
