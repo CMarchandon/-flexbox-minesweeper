@@ -4,233 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox-minesweeper</title>
+    <title>Démineur</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!--
-        <div class="bomb"><img src="bomb.gif"></div>
-        <div class="empty"></div>
-        <div class="blue"><p>1</p></div>
-        <div class="green"><p>2</p></div>
-        <div class="red"><p>3</p></div>
-    -->
-        <main>
-    <!--1--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne"><div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
+    <!--1-->
+        <div class="container">
+            <div class="row">
+                <div class="blue">1</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
+                <div class="blue">1</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
             </div>
-    <!--2--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
+    <!--2-->
+            <div class="row">
+                <div class="green">2</div>
+                <div class="green">2</div>
+                <div class="green">2</div>
+                <div class="empty"></div>
+                <div class="blue">1</div>
+                <div class="blue">1</div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
             </div>
-    <!--3--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div></div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div></div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
+    <!--3-->
+            <div class="row">
+                <div class="blue">1</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
             </div>
-    <!--4--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="caseOne">
-                        <div class="blue"><p>1</p></div>
-                    </div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
+    <!--4-->
+            <div class="row">
+                <div class="green">2</div>
+                <div class="green">2</div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
             </div>
-    <!--5--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
+    <!--5-->
+            <div class="row">
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="blue">1</div>
+                <div class="empty"></div>
+                <div class="blue">1</div>
+                <div class="blue">1</div>
+                <div class="green">2</div>
+                <div class="blue">1</div>
+                <div class="blue">1</div>
             </div>
-    <!--6--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                
-                     <div class="caseOne caseOverlay"> <!--Hidden-->
-                        <div class="blue">
-                            <p>1</p>
-                        </div>
-                    
-                </div>    
+    <!--6-->
+            <div class="row">
+                <div class="green">2</div>
+                <div class="red">3</div>
+                <div class="red">3</div>
+                <div class="red">3</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="green">2</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="hide blue">1<div class="overlay"></div></div>
             </div>
-    <!--7--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
+    <!--7-->
+            <div class="row">
+                <div class="hide blue">1</div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="hide red">3<div class="overlay"></div></div>
+                <div class="red">3</div>
+                <div class="hide green">2<div class="overlay"></div></div>
+                <div class="hide"><div class="overlay"></div></div>
             </div>
-    <!--8--><div class="horizontalRow">
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="red"><p>3</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="green"><p>2</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="bomb"><img src="bomb.gif"></div>
-                </div>
-                <div class="caseOne">
-                    <div class="blue"><p>1</p></div>
-                </div>
-                <div class="caseOne">
-                    <div class="empty"></div>
-                </div>
+    <!--8-->
+            <div class="row">
+                <div class="hide blue">1<div class="overlay"></div></div>
+                <div class="hide green">2<div class="overlay"></div></div>
+                <div class="hide red">3<div class="overlay"></div></div>
+                <div class="hide green">2<div class="overlay"></div></div>
+                <div class="hide green">2<div class="overlay"></div></div>
+                <div class="bomb"><img src="bomb.gif"></div>
+                <div class="hide blue" >1<div class="overlay"></div></div>
+                <div class="hide"><div class="overlay"></div></div>
             </div>
-        </main>
+    </div>
 </body>
 </html>
