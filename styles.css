@@ -2,6 +2,7 @@
     font-family: 'VT323', monospace;
     font-size: 50px;
     margin: 0%;
+    padding: 0%;
 }
 
 body {
@@ -41,6 +42,16 @@ img {
     text-align: center;
 }
 
+/*.caseOverlay {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-top: solid white;
+    border-left: solid white;
+    border-bottom: solid gray;
+    border-right: solid gray;
+    z-index: 3;
+} */
+
 .blue {
     color: blue;
 }
@@ -53,7 +64,3 @@ img {
     color: red;
 }
 
-.hidden {
-    background-color: aquamarine;
-    z-index: 1;
-}
